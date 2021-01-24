@@ -9,14 +9,21 @@ module.exports = class WhmcsAPI {
     }
 
 
-    request (action, method = 'GET', body) {
+    /**
+     * Make a request to the WHMCS API.
+     * @param {string} action The target action
+     * @param {string} method The request method
+     * @param {any} body The request payload
+     * @param {any} options Options (identifier, secrets and URL to use for this request)
+     */
+    request (action, method = 'GET', body, options = {}) {
         return new Promise((resolve) => {
             const params = new URLSearchParams();
             params.append('action', action);
-            params.append('identifier', this.identifier);
-            params.append('secret', this.secret);
+            params.append('identifier', options.identifer || this.identifier);
+            params.append('secret', options.secret || this.secret);
             Object.keys(body).forEach((key) => params.append(key, body[key]));
-            fetch(`${this.baseURL}/includes/api.php`, {
+            fetch(`${this.baseURL}${options.endpoint || '/includes/api.php'}`, {
                 method,
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
