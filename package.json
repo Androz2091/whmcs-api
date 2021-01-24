@@ -1,11 +1,11 @@
 {
-    "name": "whmcs-api",
     "version": "0.0.0",
+    "name": "whmcs.js",
     "description": "Simplify the use of WHMCS API",
     "types": "index.d.ts",
     "funding": "https://github.com/sponsors/Androz2091",
     "main": "index.js",
-    "repository": "https://github.com/Androz2091/whmcs-api",
+    "repository": "https://github.com/Androz2091/whmcs.js",
     "author": "Androz2091 <androz2091@gmail.com>",
     "license": "MIT",
     "dependencies": {
