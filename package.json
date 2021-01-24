@@ -1,0 +1,14 @@
+{
+    "name": "whmcs-api",
+    "version": "0.0.0",
+    "description": "Simplify the use of WHMCS API",
+    "types": "index.d.ts",
+    "funding": "https://github.com/sponsors/Androz2091",
+    "main": "index.js",
+    "repository": "https://github.com/Androz2091/whmcs-api",
+    "author": "Androz2091 <androz2091@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "node-fetch": "^2.6.1"
+    }
+}
