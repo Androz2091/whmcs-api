@@ -1,6 +1,6 @@
 {
     "name": "@androz2091/whmcs.js",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Simplify the use of WHMCS API",
     "types": "index.d.ts",
     "funding": "https://github.com/sponsors/Androz2091",
