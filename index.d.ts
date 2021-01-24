@@ -12,6 +12,6 @@ declare module '@androz2091/whmcs.js' {
 
         constructor (identifier?: string, secret?: string, baseURL?: string);
 
-        request (action: string, method?: string, body?: any, options?: RequestOptions): Promise<unknown>;
+        request (method?: string, body?: any, options?: RequestOptions): Promise<unknown>;
     }
 }
