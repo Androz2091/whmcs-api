@@ -1,5 +1,5 @@
 {
-    "name": "whmcs.js",
+    "name": "@androz2091/whmcs.js",
     "version": "1.0.0",
     "description": "Simplify the use of WHMCS API",
     "types": "index.d.ts",

@@ -1,4 +1,4 @@
-declare module 'whmcs-api' {
+declare module '@androz2091/whmcs.js' {
     interface RequestOptions {
         identifier?: string;
         secret?: string;
